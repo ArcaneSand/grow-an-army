@@ -1,0 +1,1092 @@
+fileFormatVersion: 2
+guid: 2ce5105a27618824da3aaf7dc412dc19
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6485001372531709004
+    second: grassAndFlowerTilesTransparent_0
+  - first:
+      213: 8110838807624448528
+    second: grassAndFlowerTilesTransparent_1
+  - first:
+      213: -880696911631298592
+    second: grassAndFlowerTilesTransparent_2
+  - first:
+      213: -3410874335375155943
+    second: grassAndFlowerTilesTransparent_3
+  - first:
+      213: 3041760185407064179
+    second: grassAndFlowerTilesTransparent_4
+  - first:
+      213: -4648123464596801408
+    second: grassAndFlowerTilesTransparent_5
+  - first:
+      213: 8044125852149295682
+    second: grassAndFlowerTilesTransparent_6
+  - first:
+      213: 4822822433582370052
+    second: grassAndFlowerTilesTransparent_7
+  - first:
+      213: -2600002439148142355
+    second: grassAndFlowerTilesTransparent_8
+  - first:
+      213: 3627485420477002451
+    second: grassAndFlowerTilesTransparent_9
+  - first:
+      213: -7012636647512569274
+    second: grassAndFlowerTilesTransparent_10
+  - first:
+      213: -1313830105733886046
+    second: grassAndFlowerTilesTransparent_11
+  - first:
+      213: -1773451785989924395
+    second: grassAndFlowerTilesTransparent_12
+  - first:
+      213: 5444016401829466616
+    second: grassAndFlowerTilesTransparent_13
+  - first:
+      213: -8910665566422976233
+    second: grassAndFlowerTilesTransparent_14
+  - first:
+      213: 1226225113172519703
+    second: grassAndFlowerTilesTransparent_15
+  - first:
+      213: 2127074570417090098
+    second: grassAndFlowerTilesTransparent_16
+  - first:
+      213: 1400664531382239236
+    second: grassAndFlowerTilesTransparent_17
+  - first:
+      213: -898242224434563741
+    second: grassAndFlowerTilesTransparent_18
+  - first:
+      213: 3112994766435842542
+    second: grassAndFlowerTilesTransparent_19
+  - first:
+      213: 8445775217782778100
+    second: grassAndFlowerTilesTransparent_20
+  - first:
+      213: 735097820737367315
+    second: grassAndFlowerTilesTransparent_21
+  - first:
+      213: -3057010297373594920
+    second: grassAndFlowerTilesTransparent_22
+  - first:
+      213: 6470617537176594848
+    second: grassAndFlowerTilesTransparent_23
+  - first:
+      213: -7615167344625067890
+    second: grassAndFlowerTilesTransparent_24
+  - first:
+      213: 3175898488100841534
+    second: grassAndFlowerTilesTransparent_25
+  - first:
+      213: -4966124771532156384
+    second: grassAndFlowerTilesTransparent_26
+  - first:
+      213: 763858170654844941
+    second: grassAndFlowerTilesTransparent_27
+  - first:
+      213: -8408372148441032503
+    second: grassAndFlowerTilesTransparent_28
+  - first:
+      213: 1291704788632682944
+    second: grassAndFlowerTilesTransparent_29
+  - first:
+      213: 1389749618945992031
+    second: grassAndFlowerTilesTransparent_30
+  - first:
+      213: -5965290823258523781
+    second: grassAndFlowerTilesTransparent_31
+  - first:
+      213: 5468759705768964712
+    second: grassAndFlowerTilesTransparent_32
+  - first:
+      213: -8404360626413967020
+    second: grassAndFlowerTilesTransparent_33
+  - first:
+      213: 9136886444665219092
+    second: grassAndFlowerTilesTransparent_34
+  - first:
+      213: 4963097317249617987
+    second: grassAndFlowerTilesTransparent_35
+  - first:
+      213: 5214197680797275001
+    second: grassAndFlowerTilesTransparent_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 83
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c445ca9a36a5ff950800000000000000
+      internalID: 6485001372531709004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 84
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a78e62cec7f8070800000000000000
+      internalID: 8110838807624448528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 85
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0efce6333d227c3f0800000000000000
+      internalID: -880696911631298592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 84
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d97721dd32aa0d0800000000000000
+      internalID: -3410874335375155943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_4
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 85
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3784d1fc5c0863a20800000000000000
+      internalID: 3041760185407064179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 85
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088bc84f55c8e7fb0800000000000000
+      internalID: -4648123464596801408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 67
+        width: 27
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a25e9c7d972af60800000000000000
+      internalID: 8044125852149295682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 50
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d4670737b1ee240800000000000000
+      internalID: 4822822433582370052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_8
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 67
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de00d679e8feaebd0800000000000000
+      internalID: -2600002439148142355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 67
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2b07b45ca675230800000000000000
+      internalID: 3627485420477002451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 67
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a8026af1c1eae90800000000000000
+      internalID: -7012636647512569274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 52
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af8484da7654cde0800000000000000
+      internalID: -1313830105733886046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_12
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 52
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9d9cd2ffe6367e0800000000000000
+      internalID: -1773451785989924395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_13
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 49
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f11276e2180d8b40800000000000000
+      internalID: 5444016401829466616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 33
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719bd09c0e4f65480800000000000000
+      internalID: -8910665566422976233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_15
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 52
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71baf4d5e3d640110800000000000000
+      internalID: 1226225113172519703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 39
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e2a745d03e48d10800000000000000
+      internalID: 2127074570417090098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 33
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400078268f8207310800000000000000
+      internalID: 1400664531382239236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 39
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 365325ab47dc883f0800000000000000
+      internalID: -898242224434563741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_19
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 36
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9fe092f34933b20800000000000000
+      internalID: 3112994766435842542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_20
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 36
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f86dbc10db653570800000000000000
+      internalID: 8445775217782778100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_21
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 34
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31de630c297933a00800000000000000
+      internalID: 735097820737367315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_22
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 34
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dae55ec4515395d0800000000000000
+      internalID: -3057010297373594920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_23
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 33
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9e2d40e504cc950800000000000000
+      internalID: 6470617537176594848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 19
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88d77e95ad715690800000000000000
+      internalID: -7615167344625067890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_25
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 19
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3863f929de031c20800000000000000
+      internalID: 3175898488100841534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_26
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 22
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022de8af4d7c41bb0800000000000000
+      internalID: -4966124771532156384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_27
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 17
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0869a885f4c99a00800000000000000
+      internalID: 763858170654844941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_28
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 24
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c852e894167f4b80800000000000000
+      internalID: -8408372148441032503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_29
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 18
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c14f1959ae0de110800000000000000
+      internalID: 1291704788632682944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_30
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 18
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55a20c4ae1694310800000000000000
+      internalID: 1389749618945992031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_31
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 17
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7737c90a97073da0800000000000000
+      internalID: -5965290823258523781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_32
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 17
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86234584affe4eb40800000000000000
+      internalID: 5468759705768964712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_33
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 16
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459e05ad986bd5b80800000000000000
+      internalID: -8404360626413967020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4182a57efcdbcce70800000000000000
+      internalID: 9136886444665219092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_35
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 8
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3409b54e6b670e440800000000000000
+      internalID: 4963097317249617987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassAndFlowerTilesTransparent_36
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 5
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97356982a2d8c5840800000000000000
+      internalID: 5214197680797275001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      grassAndFlowerTilesTransparent_0: 6485001372531709004
+      grassAndFlowerTilesTransparent_1: 8110838807624448528
+      grassAndFlowerTilesTransparent_10: -7012636647512569274
+      grassAndFlowerTilesTransparent_11: -1313830105733886046
+      grassAndFlowerTilesTransparent_12: -1773451785989924395
+      grassAndFlowerTilesTransparent_13: 5444016401829466616
+      grassAndFlowerTilesTransparent_14: -8910665566422976233
+      grassAndFlowerTilesTransparent_15: 1226225113172519703
+      grassAndFlowerTilesTransparent_16: 2127074570417090098
+      grassAndFlowerTilesTransparent_17: 1400664531382239236
+      grassAndFlowerTilesTransparent_18: -898242224434563741
+      grassAndFlowerTilesTransparent_19: 3112994766435842542
+      grassAndFlowerTilesTransparent_2: -880696911631298592
+      grassAndFlowerTilesTransparent_20: 8445775217782778100
+      grassAndFlowerTilesTransparent_21: 735097820737367315
+      grassAndFlowerTilesTransparent_22: -3057010297373594920
+      grassAndFlowerTilesTransparent_23: 6470617537176594848
+      grassAndFlowerTilesTransparent_24: -7615167344625067890
+      grassAndFlowerTilesTransparent_25: 3175898488100841534
+      grassAndFlowerTilesTransparent_26: -4966124771532156384
+      grassAndFlowerTilesTransparent_27: 763858170654844941
+      grassAndFlowerTilesTransparent_28: -8408372148441032503
+      grassAndFlowerTilesTransparent_29: 1291704788632682944
+      grassAndFlowerTilesTransparent_3: -3410874335375155943
+      grassAndFlowerTilesTransparent_30: 1389749618945992031
+      grassAndFlowerTilesTransparent_31: -5965290823258523781
+      grassAndFlowerTilesTransparent_32: 5468759705768964712
+      grassAndFlowerTilesTransparent_33: -8404360626413967020
+      grassAndFlowerTilesTransparent_34: 9136886444665219092
+      grassAndFlowerTilesTransparent_35: 4963097317249617987
+      grassAndFlowerTilesTransparent_36: 5214197680797275001
+      grassAndFlowerTilesTransparent_4: 3041760185407064179
+      grassAndFlowerTilesTransparent_5: -4648123464596801408
+      grassAndFlowerTilesTransparent_6: 8044125852149295682
+      grassAndFlowerTilesTransparent_7: 4822822433582370052
+      grassAndFlowerTilesTransparent_8: -2600002439148142355
+      grassAndFlowerTilesTransparent_9: 3627485420477002451
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
