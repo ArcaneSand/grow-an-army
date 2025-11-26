@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 2562977397710182367}
   - component: {fileID: 5396947284173401305}
   - component: {fileID: 1510034513686681647}
+  - component: {fileID: 5617658723137935981}
   m_Layer: 0
   m_Name: EnemyVillager
   m_TagString: Untagged
@@ -226,6 +227,15 @@ MonoBehaviour:
   spriteRenderer: {fileID: 3005938360462907821}
   visualTransform: {fileID: 6983781111189367755}
   unitHandler: {fileID: 1510034513686681647}
+  attackBehavior: {fileID: 5617658723137935981}
+  currentHealth: 0
+  damageFlashColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.1
+  aggroRange: 5
+  groupFollowRadius: 2
+  chaseTimeout: 5
+  targetLostDistance: 15
+  allyDetectionInterval: 0.5
 --- !u!114 &1510034513686681647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +250,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   villagerAnimator: {fileID: 1678481203263265153}
   weaponAnimator: {fileID: 5430560233837330233}
+--- !u!114 &5617658723137935981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5348175466446476424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ac0707271508e4aa84c7ffbede88fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 1.5
+  attackDamage: 10
+  knockbackForce: 2
+  applyKnockback: 0
+  meleeAttackSound: {fileID: 8300000, guid: 01e61b7873f14654a9f54906976d9e1a, type: 3}
 --- !u!1 &6892477752635407355
 GameObject:
   m_ObjectHideFlags: 0

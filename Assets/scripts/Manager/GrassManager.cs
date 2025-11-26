@@ -21,7 +21,6 @@ public class GrassManager : MonoBehaviour
     [SerializeField] private Transform plantContainer;
     
     [Header("Spawn Settings")]
-    [SerializeField] private float spawnChance = 0.8f; // 80% chance to spawn
     [SerializeField] private int maxSearchRadius = 10; // Max distance to search for empty cell
     
     private Dictionary<PlantType, GameObject> plantPrefabLookup;
@@ -78,6 +77,28 @@ public class GrassManager : MonoBehaviour
     /// </summary>
     public void TrySpawnGrassAndPlant(Vector2 deathPosition, PlantType plantType)
     {
+        float spawnChance = 0.8f; // Default 80% chance, could be modified per unit or via
+        switch(plantType)
+        {
+            case PlantType.Grass:
+                spawnChance = 0.9f;
+                break;
+            case PlantType.Rose:
+                spawnChance = 0.9f;
+                break;
+            case PlantType.Flower:
+                spawnChance = 0.9f;
+                break;
+            case PlantType.Sunflower:
+                spawnChance = 1f;
+                break;
+            case PlantType.Log:
+                spawnChance = 1f;
+                break;
+            case PlantType.DragonFlower:
+                spawnChance = 1f;
+                break;
+        }
         // Roll the spawn chance
         float roll = Random.Range(0f, 1f);
         if (roll > spawnChance)
@@ -293,10 +314,7 @@ public class GrassManager : MonoBehaviour
     /// <summary>
     /// Set the spawn chance (for difficulty tuning)
     /// </summary>
-    public void SetSpawnChance(float chance)
-    {
-        spawnChance = Mathf.Clamp01(chance);
-    }
+
 }
 
 /// <summary>

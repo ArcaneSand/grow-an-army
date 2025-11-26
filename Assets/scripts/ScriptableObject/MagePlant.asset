@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f7ccf63cf194e949b34936f49dfe47a, type: 3}
+  m_Name: MagePlant
+  m_EditorClassIdentifier: 
+  plantName: MagePlant
+  plantType: 3
+  growthStageSprites:
+  - {fileID: -9104100919300725331, guid: c6c16bc76a7e5b44798a8ea15617bcfd, type: 3}
+  - {fileID: -5021216437599779441, guid: c6c16bc76a7e5b44798a8ea15617bcfd, type: 3}
+  - {fileID: 86946625560498807, guid: c6c16bc76a7e5b44798a8ea15617bcfd, type: 3}
+  plantColor: {r: 1, g: 1, b: 1, a: 1}
+  plantSize: 1
+  stage0To1Time: 5
+  stage1To2Time: 8
+  stage0Stats:
+    health: 30
+    attackDamage: 10
+    attackSpeed: 1.5
+    attackRange: 2
+    specialEffectStrength: 0.3
+  stage1Stats:
+    health: 60
+    attackDamage: 15
+    attackSpeed: 1.2
+    attackRange: 2.5
+    specialEffectStrength: 0.6
+  stage2Stats:
+    health: 100
+    attackDamage: 20
+    attackSpeed: 1
+    attackRange: 3
+    specialEffectStrength: 1
+  troopsSpawnedPerStage: 010000000100000001000000
+  allyUnitToSpawn: {fileID: 0}
+  hasPassiveEffect: 0
+  specialEffect: 0

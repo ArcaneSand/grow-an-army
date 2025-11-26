@@ -30,17 +30,17 @@ MonoBehaviour:
     specialEffectStrength: 0.3
   stage1Stats:
     health: 60
-    attackDamage: 12
+    attackDamage: 8
     attackSpeed: 1.2
     attackRange: 2.5
     specialEffectStrength: 0.6
   stage2Stats:
     health: 100
-    attackDamage: 20
+    attackDamage: 12
     attackSpeed: 1
     attackRange: 3
     specialEffectStrength: 1
-  troopsSpawnedPerStage: 030000000200000001000000
+  troopsSpawnedPerStage: 010000000100000001000000
   allyUnitToSpawn: {fileID: 11400000, guid: bad678a22edf32746bb6a6aa095e641b, type: 2}
   hasPassiveEffect: 0
   specialEffect: 0

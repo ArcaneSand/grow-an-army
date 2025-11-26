@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1330750887
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -107,6 +107,7 @@ MonoBehaviour:
   currentStage: 0
   growthTimer: 0
   autoUprootDelay: 3
-  slowStrength: 0.5
   healPerSecond: 3
-  auraRadius: 2
+  healRadius: 4
+  showHealEffect: 1
+  healEffectPrefab: {fileID: 5467140249350583971, guid: 987686b257339f14da298a28274af79f, type: 3}

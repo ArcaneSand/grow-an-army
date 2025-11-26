@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using System;
+using System.Collections;
 
 /// <summary>
 /// Base class for all units (player troops, enemies)
@@ -20,8 +21,11 @@ public abstract class UnitBase : MonoBehaviour
     public Transform visualTransform;
     public UnitHandler unitHandler;
     
+    [Header("Combat System")]
+    public AttackBehavior attackBehavior;
+
     // Current stats
-    protected float currentHealth;
+    [SerializeField] protected float currentHealth;
     protected float attackTimer;
     protected bool isDead = false;
     protected bool isTurnRight = true;
@@ -42,7 +46,13 @@ public abstract class UnitBase : MonoBehaviour
     // Movement
     protected Vector2 moveDirection;
     protected Vector2 targetPosition;
-    
+
+    [Header("Visual Feedback")]
+    [SerializeField] private Color damageFlashColor = Color.red;
+    [SerializeField] private float flashDuration = 0.1f;
+    private Color originalColor; // Store once at start
+    private Coroutine currentFlashCoroutine; // Track active coroutine
+
     #region Unity Lifecycle
     
     protected virtual void Awake()
@@ -53,6 +63,7 @@ public abstract class UnitBase : MonoBehaviour
     protected virtual void Start()
     {
         InitializeUnit();
+        InitializeAttackBehavior();
     }
     
     protected virtual void Update()
@@ -148,6 +159,7 @@ public abstract class UnitBase : MonoBehaviour
             
             // Color based on team (overrides unitData.unitColor)
             spriteRenderer.color = GetTeamColor();
+            originalColor = spriteRenderer.color;
         }
         
         // Scale visual
@@ -166,6 +178,23 @@ public abstract class UnitBase : MonoBehaviour
         SetupTeamLayer();
     }
     
+     protected virtual void InitializeAttackBehavior()
+    {
+        if (attackBehavior == null)
+        {
+            attackBehavior = GetComponent<AttackBehavior>();
+        }
+        
+        if (attackBehavior != null && unitData != null)
+        {
+            attackBehavior.Initialize(unitData);
+        }
+        else
+        {
+            Debug.LogWarning($"{gameObject.name} has no AttackBehavior component! Combat will not work.");
+        }
+    }
+
     protected virtual Color GetTeamColor()
     {
 
@@ -208,9 +237,9 @@ public abstract class UnitBase : MonoBehaviour
 protected virtual void ApplyMovement()
 {
     bool isAttemptingToMove = moveDirection.sqrMagnitude > 0.01f;
-
+    float modSpeed = GetTeam() == UnitTeam.Enemy ? unitData.moveSpeed * 0.6f : unitData.moveSpeed;
     if (isAttemptingToMove)
-        rb.linearVelocity = moveDirection * unitData.moveSpeed;
+        rb.linearVelocity = moveDirection * modSpeed;
     else
         rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, Vector2.zero, Time.fixedDeltaTime * 2f);
 
@@ -284,7 +313,17 @@ protected virtual void MoveTowards(Vector2 target)
         {
             FindNearestEnemy();
         }
+        if (currentTarget != null && !currentTarget.IsDead())
+    {
+        float distanceToTarget = Vector2.Distance(transform.position, currentTarget.transform.position);
         
+        // If target moved outside detection range, forget it
+        if (distanceToTarget > unitData.detectionRadius)
+        {
+            currentTarget = null;
+            FindNearestEnemy(); // Try to find a closer enemy
+        }
+    }
         // Attack if in range
         if (currentTarget != null && CanAttack())
         {
@@ -343,29 +382,35 @@ protected virtual void MoveTowards(Vector2 target)
     protected virtual void PerformAttack(UnitBase target)
     {
         if (target == null || target.IsDead()) return;
+        if (attackBehavior == null) return;
         
-        // Deal damage
-        target.TakeDamage(unitData.attackDamage, this);
+        // Use attack behavior to execute attack
+        attackBehavior.Execute(target, this);
         
         // Reset attack timer
         attackTimer = unitData.attackCooldown;
         
-        // Visual feedback
+        // Visual feedback (handled by AttackBehavior now)
         OnAttackPerformed(target);
     }
+    
     
     protected virtual void OnAttackPerformed(UnitBase target)
     {
         unitHandler?.Attack();
         // Override in child classes for attack animations/effects
-        //Debug.Log($"{unitData.unitName} attacks {target.unitData.unitName} for {unitData.attackDamage} damage!");
+        Debug.Log($"{unitData.unitName} attacks {target.unitData.unitName} for {unitData.attackDamage} damage!");
     }
     
 
     #endregion
     
     #region Health & Damage
-    
+    public virtual void SetHealthPercent(float percent)
+    {
+        currentHealth = unitData.maxHealth * Mathf.Clamp01(percent);
+        //Debug.Log($"{unitData.unitName} health set to {currentHealth}/{unitData.maxHealth} ({percent * 100f}%)");
+    }
     public virtual void TakeDamage(float damage, UnitBase attacker)
     {
         if (isDead) return;
@@ -385,7 +430,7 @@ protected virtual void MoveTowards(Vector2 target)
         // Visual feedback - flash red or show damage number
         if (spriteRenderer != null)
         {
-            StartCoroutine(FlashRed());
+            FlashDamage();
         }
     }
     
@@ -450,13 +495,35 @@ protected virtual void MoveTowards(Vector2 target)
     
     #region Visual Effects
     
-    protected System.Collections.IEnumerator FlashRed()
+    protected void FlashDamage()
     {
-        Color originalColor = spriteRenderer.color;
-        spriteRenderer.color = Color.red;
-        yield return new WaitForSeconds(0.1f);
-        spriteRenderer.color = originalColor;
+        if (spriteRenderer == null) return;
+        
+        // CRITICAL: Stop any existing flash coroutine
+        if (currentFlashCoroutine != null)
+        {
+            StopCoroutine(currentFlashCoroutine);
+        }
+        
+        // Start new flash
+        currentFlashCoroutine = StartCoroutine(FlashRed());
     }
+
+    protected IEnumerator FlashRed()
+    {
+        // Flash red
+        spriteRenderer.color = damageFlashColor;
+        
+        // Wait
+        yield return new WaitForSeconds(flashDuration);
+        
+        // Restore to original (stored at start, not now!)
+        spriteRenderer.color = originalColor;
+        
+        // Clear reference
+        currentFlashCoroutine = null;
+    }
+
     
     #endregion
     

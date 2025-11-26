@@ -15,14 +15,12 @@ MonoBehaviour:
   unitName: Villager
   unitType: 0
   unitSprite: {fileID: 239033809502878038, guid: 6dc7dfcb62ca968479ac5510b9238407, type: 3}
-  unitColor: {r: 1, g: 1, b: 1, a: 1}
   unitSize: 1
   moveSpeed: 3
-  stoppingDistance: 0.5
-  maxHealth: 50
-  attackDamage: 10
+  maxHealth: 20
+  attackDamage: 3
   attackRange: 1.5
   attackCooldown: 1
   detectionRadius: 0.6
-  grassSpawnRadius: 1
   plantToSpawn: 0
+  spawnChance: 0

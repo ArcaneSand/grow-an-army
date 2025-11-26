@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     
     [Header("Stats")]
     [SerializeField] private float maxHealth = 100f;
-    [SerializeField] private float currentHealth;
+    [SerializeField] private float currentHealth;   
     
     [Header("Grass Bonuses")]
     [SerializeField] private float grassSpeedMultiplier = 1.3f;

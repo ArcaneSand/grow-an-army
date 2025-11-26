@@ -2,99 +2,132 @@ using UnityEngine;
 using System.Collections.Generic;
 
 /// <summary>
-/// Grass Plant - Special abilities: Slows enemies and heals allies in range
-/// This is a passive aura plant
+/// Grass Plant (Villager) - Heals allies in range
+/// Passive healing aura that affects all allies
+/// Grows through 3 stages, healing strength increases
 /// </summary>
 public class GrassPlant : PlantTurretBase
 {
-    [Header("Grass Plant Abilities")]
-    [SerializeField] private float slowStrength = 0.5f; // 50% slow
-    [SerializeField] private float healPerSecond = 3f;
-    [SerializeField] private float auraRadius = 3f;
+    [Header("Grass Plant - Healing")]
+    [SerializeField] private float healPerSecond = 5f;
+    [SerializeField] private float healRadius = 4f;
+    [SerializeField] private bool showHealEffect = true;
+    [SerializeField] private ParticleSystem healEffectPrefab;
     
-    private List<UnitBase> alliesInRange = new List<UnitBase>();
-    private List<EnemyUnit> enemiesToSlow = new List<EnemyUnit>();
+    private List<AllyUnit> alliesInRange = new List<AllyUnit>();
+    private float healEffectTimer = 0f;
     
     protected override void Update()
     {
         base.Update();
-        ApplyAuraEffects();
-
+        UpdateHealing();
     }
     
-    void ApplyAuraEffects()
+    void UpdateHealing()
     {
         // Clean up dead/null units
         alliesInRange.RemoveAll(u => u == null || u.IsDead());
-        enemiesToSlow.RemoveAll(e => e == null || e.IsDead());
         
-        // Heal allies
-        foreach (UnitBase ally in alliesInRange)
+        if (alliesInRange.Count == 0) return;
+        
+        // Calculate heal amount based on stage
+        float healAmount = healPerSecond * Time.deltaTime * currentStats.specialEffectStrength;
+        
+        // Heal all allies in range
+        foreach (AllyUnit ally in alliesInRange)
         {
-            float healAmount = healPerSecond * Time.deltaTime * currentStats.specialEffectStrength;
-            // Allies don't have a Heal method, but we can reverse damage
-            // In a real implementation, you'd add a Heal method to UnitBase
+            if (ally != null && !ally.IsDead())
+            {
+                ally.Heal(healAmount);
+            }
         }
         
-        // Slow enemies (would need to implement slow system on enemies)
-        // For now, just track them
+        // Visual effect timer
+        if (showHealEffect)
+        {
+            healEffectTimer -= Time.deltaTime;
+            if (healEffectTimer <= 0f)
+            {
+                healEffectTimer = 0.5f;
+                ShowHealEffect();
+            }
+        }
+    }
+    
+    void ShowHealEffect()
+    {
+        // Spawn healing particles or visual effect
+        // For now, just debug
+        if (alliesInRange.Count > 0)
+        {
+            Debug.Log($"{plantData.plantName} healing {alliesInRange.Count} allies");
+            if (healEffectPrefab != null)
+            {
+                ParticleSystem obj = Instantiate(healEffectPrefab, transform.position, Quaternion.identity);
+                Destroy(obj.gameObject, 2f);
+            }
+        }
+    }
+    
+    protected override void InitializeComponents()
+    {
+        base.InitializeComponents();
+        
+        // Set detection radius to heal radius
+        if (detectionCollider != null)
+        {
+            detectionCollider.radius = healRadius;
+        }
     }
     
     protected override void OnTriggerEnter2D(Collider2D other)
     {
-        base.OnTriggerEnter2D(other);
-        
-        // Detect allies for healing
+        // Detect allies for healing (don't call base - we don't attack)
         AllyUnit ally = other.GetComponent<AllyUnit>();
         if (ally != null && !ally.IsDead())
         {
             if (!alliesInRange.Contains(ally))
             {
                 alliesInRange.Add(ally);
-            }
-        }
-        
-        // Track enemies for slowing
-        EnemyUnit enemy = other.GetComponent<EnemyUnit>();
-        if (enemy != null && !enemy.IsDead())
-        {
-            if (!enemiesToSlow.Contains(enemy))
-            {
-                enemiesToSlow.Add(enemy);
+                Debug.Log($"{plantData.plantName} now healing {ally.name}");
             }
         }
     }
     
     protected override void OnTriggerExit2D(Collider2D other)
     {
-        base.OnTriggerExit2D(other);
-        
         AllyUnit ally = other.GetComponent<AllyUnit>();
         if (ally != null)
         {
             alliesInRange.Remove(ally);
         }
-        
-        EnemyUnit enemy = other.GetComponent<EnemyUnit>();
-        if (enemy != null)
-        {
-            enemiesToSlow.Remove(enemy);
-        }
     }
     
-    protected override void OnAttackPerformed(UnitBase target)
+    protected override void UpdateCombat()
     {
-        // Grass plant doesn't really "attack" - it just has aura
-        // But we can still do base damage for balance
-        base.OnAttackPerformed(target);
+        // Grass plant doesn't attack - it only heals
+        // Override to disable combat
     }
     
     protected override void OnDrawGizmosSelected()
     {
         base.OnDrawGizmosSelected();
         
-        // Draw aura radius
+        // Draw heal radius
         Gizmos.color = new Color(0f, 1f, 0f, 0.3f);
-        Gizmos.DrawWireSphere(transform.position, auraRadius);
+        Gizmos.DrawWireSphere(transform.position, healRadius);
+        
+        // Draw lines to allies being healed
+        if (Application.isPlaying)
+        {
+            Gizmos.color = Color.green;
+            foreach (AllyUnit ally in alliesInRange)
+            {
+                if (ally != null)
+                {
+                    Gizmos.DrawLine(transform.position, ally.transform.position);
+                }
+            }
+        }
     }
 }

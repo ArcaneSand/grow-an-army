@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4238877444393479633}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.158, y: 0.149, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.146, y: 0.162, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 2562977397710182367}
   - component: {fileID: 578422355257865094}
   - component: {fileID: 841719275190138090}
+  - component: {fileID: 9213352660142602920}
   m_Layer: 0
   m_Name: 'AllyVillager '
   m_TagString: Untagged
@@ -226,6 +227,10 @@ MonoBehaviour:
   spriteRenderer: {fileID: 3005938360462907821}
   visualTransform: {fileID: 6983781111189367755}
   unitHandler: {fileID: 841719275190138090}
+  attackBehavior: {fileID: 9213352660142602920}
+  currentHealth: 0
+  damageFlashColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.1
 --- !u!114 &841719275190138090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +245,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   villagerAnimator: {fileID: 7076020555693650161}
   weaponAnimator: {fileID: 6071625275542325303}
+--- !u!114 &9213352660142602920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5348175466446476424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ac0707271508e4aa84c7ffbede88fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 1.5
+  attackDamage: 10
+  knockbackForce: 2
+  applyKnockback: 0
+  meleeAttackSound: {fileID: 8300000, guid: 01e61b7873f14654a9f54906976d9e1a, type: 3}
 --- !u!1 &6892477752635407355
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,11 +12,18 @@ public class AllyUnit : UnitBase
     {
         base.Start();
         cam = Camera.main;
+         if (GameManager.Instance != null)
+        {
+            GameManager.Instance.RegisterAllyUnit(this);
+        }
     }
     
     void OnDestroy()
     {
-        
+         if (GameManager.Instance != null)
+        {
+            GameManager.Instance.UnregisterAllyUnit(this);
+        }
     }
     
     protected override UnitTeam GetTeam()
@@ -53,6 +60,17 @@ public class AllyUnit : UnitBase
         
         // Add visual feedback for attacks
         // Could add simple animation or particle effect here
+    }
+
+    public void Heal(float amount)
+    {
+        if (isDead) return;
+        
+        currentHealth += amount;
+        currentHealth = Mathf.Min(currentHealth, unitData.maxHealth);
+        
+        // Optional: Show heal effect
+        // Could add floating text or particle effect here
     }
     
     protected override void OnDrawGizmosSelected()

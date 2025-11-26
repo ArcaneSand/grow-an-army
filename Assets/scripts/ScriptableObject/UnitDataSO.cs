@@ -13,14 +13,11 @@ public class UnitDataSO : ScriptableObject
     
     [Header("Visual")]
     public Sprite unitSprite;
-    public Color unitColor = Color.white;
     public float unitSize = 1f;
     
     [Header("Movement")]
     [Tooltip("How fast the unit moves")]
     public float moveSpeed = 3f;
-    [Tooltip("How close unit gets to target before stopping")]
-    public float stoppingDistance = 0.5f;
     
     [Header("Combat Stats")]
     public float maxHealth = 50f;
@@ -35,8 +32,9 @@ public class UnitDataSO : ScriptableObject
     
     [Header("Plant Conversion (for enemies only)")]
     [Tooltip("How many grass tiles spawn when this enemy dies")]
-    public int grassSpawnRadius = 1;
     public PlantType plantToSpawn = PlantType.Grass;
+
+    public float spawnChance = 0f;
 }
 
 /// <summary>

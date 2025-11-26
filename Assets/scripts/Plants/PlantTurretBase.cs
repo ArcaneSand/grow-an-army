@@ -51,6 +51,10 @@ public class PlantTurretBase : MonoBehaviour
     protected virtual void Start()
     {
         InitializePlant();
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.RegisterPlant(this);
+        }
     }
     
     protected virtual void InitializeComponents()
@@ -278,7 +282,7 @@ public class PlantTurretBase : MonoBehaviour
     protected virtual void OnAttackPerformed(UnitBase target)
     {
         // Override in child classes for specific attack effects
-        Debug.Log($"{plantData.plantName} (Stage {currentStage}) attacks {target.unitData.unitName} for {currentStats.attackDamage} damage!");
+        //Debug.Log($"{plantData.plantName} (Stage {currentStage}) attacks {target.unitData.unitName} for {currentStats.attackDamage} damage!");
     }
     
     #endregion
@@ -306,21 +310,21 @@ public class PlantTurretBase : MonoBehaviour
     
     protected virtual void SpawnAllyTroops(int count)
     {
-        if (plantData.allyUnitToSpawn == null)
-        {
-            Debug.LogWarning($"Cannot spawn troops - {plantData.plantName} has no allyUnitToSpawn set!");
-            return;
-        }
         
         for (int i = 0; i < count; i++)
         {
             // Spawn in circle around plant position
-            float angle = (360f / count) * i * Mathf.Deg2Rad;
-            Vector2 offset = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * 1f;
-            Vector2 spawnPos = (Vector2)transform.position + offset;
+            //float angle = (360f / count) * i * Mathf.Deg2Rad;
+            //Vector2 offset = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * 1f;
+            Vector2 spawnPos = (Vector2)transform.position;
             
             // Create ally unit
-            Instantiate(plantUnit, spawnPos, Quaternion.identity);
+            GameObject summon = Instantiate(plantUnit, spawnPos, Quaternion.identity);
+            UnitBase allyUnit = summon.GetComponent<UnitBase>();
+            if (allyUnit != null)
+            {
+                allyUnit.SetHealthPercent(GetHealthPercentForCurrentStage()); 
+            }
         }
     }
     
@@ -332,7 +336,21 @@ public class PlantTurretBase : MonoBehaviour
             myGridCell.RemovePlant();
         }
     }
-    
+    public virtual float GetHealthPercentForCurrentStage()
+    {
+        if(currentStage < 2) return 0f;
+        switch (currentStage)
+        {
+            case 0:
+                return 1f;
+            case 1:
+                return 0.7f;
+            case 2:
+                return 0.5f;
+            default:
+                return 1f;
+        }
+    }
     public int GetTroopCountForCurrentStage()
     {
         if (plantData.troopsSpawnedPerStage != null && currentStage < plantData.troopsSpawnedPerStage.Length)

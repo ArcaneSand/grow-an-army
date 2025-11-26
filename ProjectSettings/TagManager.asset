@@ -14,8 +14,8 @@ TagManager:
   - Player
   - PlayerUnit
   - EnemyUnit
-  - 
-  - 
+  - PlayerProjectile
+  - EnemyProjectile
   - 
   - 
   - 
@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 2991886051
+    locked: 0
+  - name: grass
+    uniqueID: 1330750887
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
